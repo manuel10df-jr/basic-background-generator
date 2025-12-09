@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Basic Background Generator</title>
+</head>
+<body>
+    <h1>Generador de Degradado CSS</h1>
+    <div class="controles">
+        <div class="color-input">
+            <label for="color1">Color Inicial</label>
+            <input type="color" id="color1" value="#">
+        </div>
+
+        <div class="color-input">
+            <label for="direction">Dirección</label>
+            <select id="direction">
+                <option value="to right">→ Derecha</option>
+                <option value="to left">← Izquierda</option>
+                <option value="to bottom" selected>↓ Abajo</option>
+                <option value="45deg">45°</option>
+                <option value="135deg">135°</option>
+            </select>
+        </div>
+
+        <div class="color-input">
+            <label for="color2">Color Final</label>
+            <input type="color" id="color2" value="#">
+        </div>
+    </div>
+
+    <div class="css-output">
+        <h2>Código CSS Resultante:</h2>
+        <textarea id="cssCode" readonly>
+        </textarea>
+        <p>Tip: Copia este código y pégalo en el CSS de tu sitio.</p>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
